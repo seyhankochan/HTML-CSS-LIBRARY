@@ -1,0 +1,125 @@
+<head>
+    <title>Card</title>
+    <h1>Card</h1>
+    <style>
+        body {
+            background-color: rgb(179, 179, 179);
+            margin: 0;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+        .card {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.5s ease-in-out;
+            box-shadow: 5px 5px 50px rgb(0, 0, 0);
+        }
+        .card img {
+            transition: filter 0.5s, transform 0.5s;
+        }
+        
+        .card:hover img {
+            filter: grayscale(100%);
+            transform: scale(1.2);
+        }
+        
+        .text p{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: -150px;
+            color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+            transform: translateY(30px);
+        }
+
+        .text:hover p{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        .text h3{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: -200px;
+            color: white;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+            transform: translateY(-30px);
+        }
+
+        .text:hover h3{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        .border {
+            width: 270px;
+            height: 270px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -135px;
+            margin-top: -135px;
+            border: 2px solid white;
+            border-radius: 10px;
+            opacity: 0;
+            transition: 0.8s ease-in-out;
+        }
+
+        .border:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" style="left: 50%; top: 50%; margin-left: -150px; margin-top: -150px;">
+        <img src="img/car.png" alt="">
+        <div class="border">
+            <div class="text">
+                <h3>Ford Mustang</h3>
+                <p>2021 Ford Mustang...</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="left: 50%; top: 50%; margin-left: 170px; margin-top: -150px;">
+        <img src="img/car2.jpg" alt="">
+        <div class="border">
+            <div class="text">
+                <h3>Nissan Skyline</h3>
+                <p>Nissan Skyline...</p>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="left: 50%; top: 50%; margin-left: -470px; margin-top: -150px;">
+        <img src="img/car3.jpg" alt="">
+        <div class="border">
+            <div class="text">
+                <h3>BMW E30</h3>
+                <p>BMW E30...</p>
+            </div>
+        </div>
+    </div>
+</body>

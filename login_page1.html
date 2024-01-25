@@ -1,0 +1,143 @@
+<head>
+    <style>
+        body{
+            background-color: rgb(244, 244, 244);
+        }
+        .container{
+            background-color: rgb(255, 255, 255);
+            width: 350px;
+            height: 550px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -175px;
+            margin-top: -275px;
+            border-radius: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .content{
+            width: 300px;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: -250px;
+        }
+        .deneme{
+            width: 300px;
+            height: 280px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: -170px;
+        }
+        input[type=text], input[type=password]{
+            width: 300px;
+            height: 40px;
+            margin-bottom: 20px;
+            border: 1px solid rgb(185, 185, 185);
+            border-radius: 5px;
+        }
+        input[type=checkbox]{
+            margin-right: -1px;
+            margin-left: 0px;
+        }
+        
+        button{
+            width: 300px;
+            height: 40px;
+            margin-top: 30px;
+            border-radius: 5px;
+            background-color: #F6628D;
+            color: white;
+            border: none;
+            box-shadow: 1px 1px 15px rgb(139, 139, 139);
+            transition: filter 0.5s ease-in-out;
+        }
+        button:hover{
+            filter: brightness(1.2);
+        }
+        .fp a {
+            text-decoration: none;
+            margin-left: 175px;
+            color: black;
+            color: rgb(147, 147, 147);
+        }
+        .fp a:hover {
+            text-decoration: underline;
+        }
+        .or h4{
+            position: absolute;
+            margin-top: 320px;
+            margin-left: 135px;
+            color: rgb(147, 147, 147);
+        }
+        .social{
+            width: 300px;
+            height: 80px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            transition: filter, transform 0.2s ease-in-out;
+        }
+        img:hover{
+            filter: contrast(1.5);
+            transform: scale(1.2);
+        }
+        .na {
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+            position: absolute;
+            margin-top: 430px;
+            margin-left: 70px;
+        }
+        .na a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h3>LOGIN</h3>
+
+            <div class="deneme">
+                <label for="username">Username</label>
+                <input type="text" name="username" required>
+    
+                <label for="password">Password</label>
+                <input type="password" name="password" required>
+
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me?
+                </label>
+
+                <button type="submit">Login</button>
+                <label class="fp"><a href="">Forgot Password?</a></label>
+
+            </div>
+
+            <label class="or"><h4>OR</h4></label>
+
+            <div class="social">
+                <a href=""><img src="img/linkedin.png" alt="linkdn"></a>
+                <a href=""><img src="img/discord.png" alt="discord"></a>
+                <a href=""><img src="img/instagram.png" alt="instagram"></a>
+            </div>
+            <label class="na">Need an account? <a href="">SIGN UP</a></label>
+        </div>
+    </div>
+</body>
